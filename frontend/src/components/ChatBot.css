@@ -1,0 +1,81 @@
+/* ChatBot.css */
+
+.chatbot-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .chat-window {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of messages */
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-height: 300px; /* Add a maximum height and enable scrolling */
+    overflow-y: auto;
+  }
+  
+  .message {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 70%; /* Limit the message width to 70% to avoid stretching */
+  }
+  
+  /* Style for user messages */
+  .user-message {
+    background-color: #b2d8d8;
+    color: #000;
+    align-self: flex-start; /* Align user messages to the left side */
+  }
+  
+  /* Style for bot messages */
+  .bot-message {
+    background-color: #ffcccb;
+    color: #000;
+    align-self: flex-end; /* Align bot messages to the right side */
+  }
+  
+  .user-input-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .user-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+  }
+  
+  .send-button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* ChatBot.css */
+
+/* Rest of the CSS classes from the previous versions */
+
+/* ChatBot.css */
+
+/* Rest of the CSS classes from the previous versions */
+
+.user-bubble {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bot-bubble {
+  display: flex;
+  justify-content: flex-end;
+}
+
