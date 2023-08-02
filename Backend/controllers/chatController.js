@@ -5,9 +5,7 @@ exports.postMessage = async (req, res) => {
   const userQuery = req.body.query.toLowerCase();
 
   try {
-    const chatEntry = await Chat.find({
-      $or: { quetion: { '$regex': userQuery } },
-    });
+    const chatEntry = await Chat.findOne({ question: userQuery });
     if (chatEntry) {
       res.json({ answer: chatEntry.answer });
     } else {
